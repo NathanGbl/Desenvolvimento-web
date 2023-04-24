@@ -1,0 +1,167 @@
+body{
+    background-color: lightgray;
+}
+h1{
+    text-align: center;
+    color: darkgreen;
+    z-index: 3;
+}
+#cmm{
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+#java{
+    z-index: 2;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: 15px;
+}
+#titulo{
+    position: absolute;
+    top: 80px;
+    left: 46%;
+}
+.topo{
+    border: solid blue;
+    width: 100%;
+    height: 180px;
+    background-color: bisque;
+}
+.indice{
+    background-color: lightskyblue;
+    text-align: center;
+    height: 10px;
+    padding: 20px;
+}
+.topico{
+    display: flex;
+    color: black;
+    font-size: 22pt;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+.texto{
+    font-family: sans-serif;
+    font-size: 20pt;
+    text-align:center;
+    color: indigo;
+    padding: auto;
+}
+#home{
+    position: absolute;
+    padding: 10px;
+    top: 199px;
+    left: 550px;
+}
+#livros{
+    position: absolute;
+    padding: 10px;
+    top: 199px;
+    left: 810px;
+}
+#videos{
+    position: absolute;
+    padding: 10px;
+    top: 199px;
+    right: 810px;
+}
+#contatos{
+    position: absolute;
+    padding: 10px;
+    top: 199px;
+    right: 550px;
+}
+.fotolivro{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+#livro1{
+    height: 100%;
+    
+}
+#livro2{
+    height: 100%;
+}
+#livro3{
+    height: 100%;
+}
+iframe{
+    position: relative;
+    height: 400px;
+    width: 400px;
+}
+#yt{
+    padding: 40px;
+    left: 25%;
+}
+#maps{
+    padding: 40px;
+    left: 25%;
+}
+table{
+    border: dashed;
+    color: red;
+}
+td{
+    border: solid red;
+    border-width: 1px;
+    font-size: 15pt;
+    text-align: center;
+}
+.tabela{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    margin: auto;
+    justify-content: center;
+}
+.separador{
+    color: black;
+}
+.final{
+    background-color: yellow;
+    height: 100px;
+    width: 500px;
+    margin: auto;
+    text-align: start;
+}
+.rodape{
+    background-color: bisque;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    justify-content: space-between;
+}
+#ultimo{
+    justify-items: center;
+    align-self: center;
+    font-size: 15pt;
+    font-family: Comic Sans MS;
+}
+#html2{
+    margin: 10px;
+    padding: 10px;
+}
+#css2{
+    margin: 10px;
+    padding: 10px;
+}
+#site{
+    text-align: start;
+    bottom: 10px;
+}
+.final a{
+    color: darkred;
+}
