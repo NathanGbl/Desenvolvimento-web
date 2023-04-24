@@ -1,0 +1,43 @@
+table, th, td {
+    border: 1px solid rgb(0, 215, 243);
+    height: 100px;
+    width: 400px;
+    font-size: 15pt;
+}
+a{
+    color: rgb(0, 193, 252);
+    text-decoration: none;
+}
+a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+#menu p {
+    color: rgb(0, 255, 64);
+}
+.separador {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 255, 64);
+    text-align: center;
+}
+body{
+    background-image: url(https://img2.wallspic.com/previews/3/8/3/5/5/155383/155383-minimalist-minimalism-design-atmosphere-light-x750.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+#menu{
+    position: fixed;
+}
+tr{
+    text-align: center;
+}
+h1{
+    color: rgb(24, 211, 164);
+}
+h2{
+    color: rgb(50, 147, 185);
+}
+ol{
+    color: rgb(0, 255, 64);
+    font-size: 20pt;
+}
