@@ -1,7 +1,8 @@
 body{
     display: flex;
     justify-content: center;
-    background-color: rgb(2, 2, 73);
+    background: rgb(47,174,177);
+    background: linear-gradient(214deg, rgba(47,174,177,1) 0%, rgba(39,0,145,1) 98%);
     height: 100vh;
 }
 #canvas{
