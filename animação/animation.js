@@ -5,7 +5,6 @@ addEventListener('mousemove', function(evento){
     let rect = canvas.getBoundingClientRect()
     let x_mouse = evento.clientX - rect.left
     let y_mouse = evento.clientY - rect.top
-    console.log(x_mouse, y_mouse)
     if (x_mouse >= 0 && x_mouse <= 270 && y_mouse >= 0 && y_mouse <= 270){
         ctx.clearRect(0, 0, canvas.width, canvas.height)
         var quadrado = {
