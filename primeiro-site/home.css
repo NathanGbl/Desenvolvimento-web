@@ -1,0 +1,59 @@
+body{
+    font-family: Arial;
+    background: rgb(2,0,36);
+    background: linear-gradient(320deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 50%, rgba(0,212,255,1) 94%);
+    color: white;
+    background-position: center;
+}
+h1, h2{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+h1{
+    font-size: 26pt;
+}
+h2{
+    font-size: 20pt;
+}
+img, iframe{
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    height: 300px;
+}
+p{
+    font-size: 18pt;
+}
+.subtitulo{
+    display: flex;
+    justify-content: center;
+}
+.moradia{
+    display: flex;
+    justify-content: space-around;
+}
+.hobbies{
+    display: flex;
+    justify-content: space-around;
+}
+.estudo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.redes{
+    display: flex;
+    justify-content: space-around;
+}
+.curso-em-video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 150px;
+}
+#cev{
+    width: 560px;
+    height: 315px;
+}
