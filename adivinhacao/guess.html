@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação</title>
+    <link rel="stylesheet" href="guess.css">
+</head>
+<body>
+    <h1>Jogo de adivinhação</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="corpo">
+        <div class="number">Digite um número: <input type="text" id="numero"></div>
+        <br>
+        <input type="button" value='Clique aqui' id="botao" onclick="randnum()">
+        <br>
+        <p id="feed" onclick="randnum()" value='numero igual'>Numero</p>
+    </div>
+    
+    <script src="guess.js"></script>
+</body>
+</html>
