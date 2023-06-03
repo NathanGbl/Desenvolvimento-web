@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de carros</title>
+    <link rel="stylesheet" href="/carro/css/venda.css">
+</head>
+<body>
+  <h1>Bem vindo a Loja de carros!</h1>
+  <section class="conteudo">
+    <%for (var i = 0; i < carros.length; i++){%>
+      <% if (carros[i].db_qtde_disponivel === 0){
+        carros[i].db_qtde_disponivel = 'Esgotado'
+      } %>
+        <form action="/compra" method="post">
+          <div>Marca: <input type="text" name="marca" value="<%=carros[i].db_marca%>"></div>
+          <div>Modelo: <input type="text" name="modelo" value="<%=carros[i].db_modelo%>"></div>
+          <div>Ano: <input type="text" name="ano" value="<%=carros[i].db_ano%>"></div>
+          <div>Quantidade disponível: <input type="text" name="qtde_disponivel" value="<%=carros[i].db_qtde_disponivel%>"></div>
+          <button id="botao" type="submit">Comprar</button>
+          <br>
+        </form>
+        <%}%>
+  </section>
+        <section id="redirect">
+            <h3>Links:</h3>
+            <div id="links">
+                <a href="/carro/html/cadastro_carro.html">Cadastro de carro</a>
+                <a href="/carro/html/remove_carro.html">Remoção de carro</a>
+                <a href="/carro/html/gerencia.html">Gerenciar carro</a>
+                <a href="/usuarios/html/cadastro.html">Cadastro de usuário</a>
+                <a href="/usuarios/html/login.html">Login do usuário</a>
+                <a href="/lista_carros">Lista de carros</a>
+                <a href="/venda">Loja</a>
+            </div>
+        </section>
+</body>
+</html>

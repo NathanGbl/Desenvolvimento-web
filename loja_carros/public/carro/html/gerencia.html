@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/carro/css/gerencia.css">
+</head>
+<body>
+    <header><h1>Gerencie os carros aqui!</h1></header>
+    <main>
+        <section id="formulario">
+            <h3>Dados para modificar:</h3>
+            <form action="/update_carro" method="post">
+                <p>Marca: <input type="text" name="marca" placeholder="Marca"></p>
+                <p>Modelo: <input type="text" name="modelo" placeholder="Modelo"></p>
+                <p>Ano: <input type="text" name="ano" placeholder="Ano"></p>
+                <p>Quantidade disponível: <input type="text" name="qtnd_disponivel" placeholder="Quantidade disponível"></p>
+                <p>Nova Marca: <input type="text" name="novamarca" placeholder="Digite o mesmo para manter"></p>
+                <p>Nova Modelo: <input type="text" name="novomodelo" placeholder="Digite o mesmo para manter"></p>
+                <p>Novo Ano: <input type="text" name="novoano" placeholder="Digite o mesmo para manter"></p>
+                <p>Nova Quantidade disponível: <input type="text" name="novaqtnd_disponivel" placeholder="Digite o mesmo para manter"></p>
+                <button id="botao" type="submit">Atualizar</button>
+            </form>
+        </section>
+        <section id="redirect">
+            <h3>Links:</h3>
+            <div id="links">
+                <a href="cadastro_carro.html">Cadastro de carro</a>
+                <a href="remove_carro.html">Remoção de carro</a>
+                <a href="gerencia.html">Gerenciar carro</a>
+                <a href="/usuarios/html/cadastro.html">Cadastro de usuário</a>
+                <a href="/usuarios/html/login.html">Login do usuário</a>
+                <a href="/lista_carros">Lista de carros</a>
+                <a href="/venda">Loja</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/carro/css/remove_carro.css">
+</head>
+<body>
+    <h1>Remova um carro aqui!</h1>
+    <form action="/remover_carro" method="post">
+        <h3>Remoção:</h3>
+        <p>Marca: <input type="text" name="marca" placeholder="Marca"></p>
+        <p>Modelo: <input type="text" name="modelo" placeholder="Modelo"></p>
+        <p>Ano: <input type="text" name="ano" placeholder="Ano"></p>
+        <p>Quantidade disponível: <input type="text" name="qtde_disponivel" placeholder="Quantidade disponível"></p>
+        <button id="botao" type="submit">Remover</button>
+    </form>
+    <section id="redirect">
+        <h3>Links:</h3>
+        <div id="links">
+            <a href="cadastro_carro.html">Cadastro de carro</a>
+            <a href="remove_carro.html">Remoção de carro</a>
+            <a href="gerencia.html">Gerenciar carro</a>
+            <a href="/usuarios/html/cadastro.html">Cadastro de usuário</a>
+            <a href="/usuarios/html/login.html">Login do usuário</a>
+            <a href="/lista_carros">Lista de carros</a>
+            <a href="/venda">Loja</a>
+        </div>
+    </section>
+</body>
+</html>
