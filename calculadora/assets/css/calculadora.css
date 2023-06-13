@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: #000000;
+    color: rgb(0, 255, 64);
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 0 200px 0;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    border: 1px solid rgb(0, 255, 64);
+    padding: 20px;
+    gap: 20px;
+    grid-template-areas: 
+    'resultado resultado'
+    'numeros contas';
+    box-shadow: 0 0 15px 0 rgb(0, 255, 64);
+}
+
+#numeros {
+    grid-area: numeros;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+#numeros > button {
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 255, 64);
+    background-color: #000;
+    border: 1px solid rgb(0, 255, 64);
+}
+
+#contas {
+    grid-area: contas;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+
+#contas > button {
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 255, 64);
+    background-color: #000;
+    border: 1px solid rgb(0, 255, 64);
+}
+
+#resultado {
+    grid-area: resultado;
+    border: 1px solid rgb(0, 255, 64);
+    width: 100%;
+    padding: 20px;
+    text-align: end;
+}
