@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -7,6 +9,7 @@
 body {
     background-color: rgb(17, 17, 17);
     color: rgb(228, 228, 228);
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -32,7 +35,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px;
+}
+
+#button {
+    padding: 10px;
+}
+
+#logo {
+    padding-left: 10px;
 }
 
 #search {
@@ -40,7 +50,7 @@ header {
     height: 40px;
     background-color: transparent;
     border: 0;
-    color: #fff;
+    color: rgb(228, 228, 228);
     font-size: 15pt;
 }
 
@@ -61,3 +71,41 @@ header {
     gap: 30px;
 }
 
+
+
+
+
+.from-youtube {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 30px 30px;
+    border-top: 1px solid rgb(63, 63, 63);
+    gap: 20px;
+}
+
+.from-youtube a {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    text-decoration: none;
+    color: rgb(228, 228, 228);
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 30px 30px;
+    gap: 10px;
+}
+
+.credits {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 20px 30px;
+}
+
+.credits nav a {
+    color: rgb(160, 159, 159);
+    text-decoration: none;
+}
