@@ -12,23 +12,27 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-
+/* Left side of header */
 header .menu-icon a img {
     width: 100px;
 }
 
 header .menu-icon button {
     border: 0;
+    border-radius: 50%;
     background-color: transparent;
 }
 
+header .menu-icon button:hover {
+    background-color: rgba(56, 56, 56, 0.726);
+}
+/* ------------------- */
 header {
     display: flex;
     align-items: center;
     padding: 10px;
     justify-content: space-between;
-    margin: 0 30px;
+    margin: 0 10px;
 }
 
 .menu-icon {
@@ -41,6 +45,10 @@ header {
     padding: 10px;
 }
 
+/* #button:hover {
+    background-color: rgba(56, 56, 56, 0.726);
+} */
+
 #logo {
     padding-left: 10px;
 }
@@ -52,6 +60,10 @@ header {
     border: 0;
     color: rgb(228, 228, 228);
     font-size: 15pt;
+}
+
+#search:focus {
+    outline: 0px;
 }
 
 .search-bar {
@@ -70,10 +82,6 @@ header {
     align-items: center;
     gap: 30px;
 }
-
-
-
-
 
 .from-youtube {
     display: flex;
@@ -109,3 +117,4 @@ header {
     color: rgb(160, 159, 159);
     text-decoration: none;
 }
+
