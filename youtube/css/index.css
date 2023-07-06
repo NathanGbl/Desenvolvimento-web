@@ -7,9 +7,13 @@
 }
 
 body {
+    display: grid;
     background-color: rgb(17, 17, 17);
     color: rgb(228, 228, 228);
     font-family: 'Roboto', sans-serif;
+    grid-template-areas: 
+    'header header header'
+    'sidebar main main'
 }
 
 /* Left side of header */
@@ -26,13 +30,24 @@ header .menu-icon button {
 header .menu-icon button:hover {
     background-color: rgba(56, 56, 56, 0.726);
 }
+
+#img-button {
+    padding: 10px;
+}
+
+#logo {
+    padding-left: 10px;
+}
+
 /* ------------------- */
+
 header {
     display: flex;
     align-items: center;
     padding: 10px;
     justify-content: space-between;
     margin: 0 10px;
+    grid-area: header;
 }
 
 .menu-icon {
@@ -41,18 +56,7 @@ header {
     align-items: center;
 }
 
-#button {
-    padding: 10px;
-}
-
-/* #button:hover {
-    background-color: rgba(56, 56, 56, 0.726);
-} */
-
-#logo {
-    padding-left: 10px;
-}
-
+/* Center of header */
 #search {
     width: 500px;
     height: 40px;
@@ -76,6 +80,10 @@ header {
     padding: 0 20px;
 }
 
+/* -------- */
+
+/* Right Side of header */
+
 .creator-area {
     display: flex;
     justify-content: center;
@@ -83,10 +91,52 @@ header {
     gap: 30px;
 }
 
+/* ------------------- */
+
+/* Side bar */
+
+.side-bar {
+    max-width: 230px;
+    grid-area: sidebar;
+    font-size: 0.9em;
+    padding: 0 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+.side-bar > section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+}
+
+.home-shorts-subs section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 10px;
+}
+
+.about-videos section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 10px;
+}
+
+.subscriptions {
+
+}
+
+.explore {
+
+}
+
 .from-youtube {
     display: flex;
     flex-direction: column;
-    padding: 30px 0 30px 30px;
+    /* padding: 30px 0 30px 30px; */
     border-top: 1px solid rgb(63, 63, 63);
     gap: 20px;
 }
@@ -102,7 +152,7 @@ header {
 .service {
     display: flex;
     flex-direction: column;
-    margin: 0 0 30px 30px;
+    /* margin: 0 0 30px 30px; */
     gap: 10px;
 }
 
@@ -110,7 +160,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px 0 20px 30px;
+    /* padding: 20px 0 20px 30px; */
 }
 
 .credits nav a {
@@ -118,3 +168,25 @@ header {
     text-decoration: none;
 }
 
+/* -------- */
+
+.main {
+    display: grid;
+    grid-area: main;
+    margin: 50px 90px;
+    gap: 3px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* Scroll bar */
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: rgb(160, 159, 159);
+}
+
+/* ---------- */

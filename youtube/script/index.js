@@ -21,6 +21,6 @@ button.addEventListener('click', () => {
     if (side_bar.style.display == 'block') {
         side_bar.style.display = 'none'
     } else {
-        side_bar.style.display = 'block' 
+        side_bar.style.display = 'flex' 
     }
 })
