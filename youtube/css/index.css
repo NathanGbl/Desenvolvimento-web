@@ -17,6 +17,7 @@ body {
 }
 
 /* Left side of header */
+
 header .menu-icon a img {
     width: 100px;
 }
@@ -57,6 +58,7 @@ header {
 }
 
 /* Center of header */
+
 #search {
     width: 500px;
     height: 40px;
@@ -170,23 +172,43 @@ header {
 
 /* -------- */
 
+/* Main */
 .main {
     display: grid;
     grid-area: main;
     margin: 50px 90px;
-    gap: 3px;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
+
+.main .videos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px 0;
+}
+
+.thumb {
+    max-width: 400px;
+    border-radius: 10px;
+    max-height: 200px;
+}
+
+/* ---- */
 
 /* Scroll bar */
 
 ::-webkit-scrollbar {
     background-color: transparent;
+    width: 7px;
 }
 
 ::-webkit-scrollbar-thumb {
     border-radius: 20px;
-    background-color: rgb(160, 159, 159);
+    background-color: rgb(180, 179, 179);
 }
 
 /* ---------- */
+
+/* Responsive */
+
