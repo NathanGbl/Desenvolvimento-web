@@ -18,11 +18,7 @@ search_input.addEventListener('blur', () => {
     img_search_img.style.border = '1px solid rgb(63, 63, 63)'
 })
 
-if (search_input.length > 0) {
-    clear_icon.style.display = 'block'
-} else {
-    clear_icon.style.display = 'none'
-}
+
 
 
 //
@@ -30,10 +26,10 @@ if (search_input.length > 0) {
 // Side bar
 
 button.addEventListener('click', () => {
-    if (side_bar.style.display == 'flex') {
-        side_bar.style.display = 'none'
-    } else {
+    if (side_bar.style.display === 'none') {
         side_bar.style.display = 'flex'
+    } else {
+        side_bar.style.display = 'none'
     }
 })
 
