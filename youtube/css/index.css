@@ -75,11 +75,25 @@ header {
     border-radius: 50%;
 }
 
+.mic:hover {
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+}
+
 .img-search-img {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 40px;
+}
+
+.icon-input-icon {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 18.82%);
+    border-radius: 40px 0 0 40px;
     gap: 10px;
 }
 
@@ -89,17 +103,28 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 63, 63);
+    background-color: hsla(0, 0%, 100%, 0.08);
+    border: 1px solid hsl(0, 0%, 18.82%);
+    border-left: 0;
+    border-radius: 0 40px 40px 0;
+    padding: 0 25px;
 }
 
-/* #search {
-    width: 500px;
-    height: 40px;
+#clear {
+    z-index: 1;
+    background-color: transparent;
+}
+
+#search {
+    background-color: transparent;
     border: 0;
-    color: rgb(228, 228, 228);
-    font-size: 15pt;
-    outline: 0px;
-} */
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    color: rgb(255, 255, 255);
+    outline: 0;
+    font-size: 1.1em;
+}
 
 /* -------- */
 
