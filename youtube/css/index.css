@@ -95,11 +95,12 @@ header {
     border: 1px solid hsl(0, 0%, 18.82%);
     border-radius: 40px 0 0 40px;
     gap: 10px;
+    padding: 0 0 0 15px;
 }
 
 .search-button {
     height: 100%;
-    width: 40px;
+    width: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,16 +111,28 @@ header {
     padding: 0 25px;
 }
 
+.search-button:hover {
+    cursor: pointer;
+}
+
+#search-icon {
+    height: 15px;
+}
+
+#icon-search {
+    height: 20px;
+}
+
 #clear {
-    z-index: 1;
     background-color: transparent;
+    padding: 10px;
 }
 
 #search {
     background-color: transparent;
     border: 0;
     height: 100%;
-    width: 100%;
+    width: 500px;
     z-index: 0;
     color: rgb(255, 255, 255);
     outline: 0;
@@ -135,6 +148,27 @@ header {
     justify-content: center;
     align-items: center;
     gap: 30px;
+}
+
+.creator-area > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.creator-area > div:hover {
+    cursor: pointer;
+}
+
+.creator-area > div:nth-child(-n + 2):hover {
+    background-color: hsl(0, 0%, 18.82%);
+}
+
+.creator-area > div:nth-child(-1):hover {
+    cursor: pointer;
 }
 
 /* ------------------- */
@@ -171,6 +205,7 @@ header {
 
 .side-bar section section:hover {
     background-color: rgb(63, 63, 63);
+    cursor: pointer;
 }
 
 .home-shorts-subs section:first-child {
