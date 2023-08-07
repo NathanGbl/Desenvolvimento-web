@@ -20,7 +20,17 @@ search_input.addEventListener('blur', () => {
     icon_input_icon.style.border = '1px solid hsl(0, 0%, 18.82%)'
 })
 
-
+search_input.addEventListener('input', () => {
+    if (search_input.value.length > 0) {
+        clear_icon.style.display = 'block'
+        clear_icon.addEventListener('click', () => {
+            search_input.value.length = 0
+        })
+    }
+    else {
+        clear_icon.style.display = 'none'
+    }
+});
 
 //
 
