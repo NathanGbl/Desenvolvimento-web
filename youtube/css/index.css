@@ -27,12 +27,12 @@ body {
     height: 40px;
 }
 
-#button:hover {
-    background-color: rgba(255,255,255, 0.1);
+#img-button:hover {
+    cursor: pointer;
 }
 
-#img-button {
-    padding: 10px;
+#button:hover {
+    background-color: rgba(255,255,255, 0.1);
 }
 
 #logo {
@@ -228,12 +228,10 @@ header {
     gap: 0 10px;
 }
 
-.subscriptions {
-
-}
-
-.explore {
-
+.subscription section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .from-youtube {
@@ -269,6 +267,18 @@ header {
     text-decoration: none;
 }
 
+.side-bar2 {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px 0;
+}
+
+.side-bar2 section {
+    display: flex;
+    flex-direction: column;
+}
+
 /* -------- */
 
 /* Main */
@@ -276,21 +286,32 @@ header {
     display: grid;
     grid-area: main;
     margin: 0 auto;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     grid-auto-rows: 400px;
+    width: 100%;
 }
 
-.main .videos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 10px 0;
+.videos {
+    display: grid;
+    align-items: center;
+    gap: 10px;
 }
 
 .thumb {
-    max-width: 400px;
     border-radius: 10px;
-    max-height: 200px;
+    height: 200px;
+    grid-area: video;
+    grid-column: span 2;
+}
+
+.img-channel {
+    grid-area: canal;
+    grid-column: span 2;
+    border-radius: 50%;
+}
+
+.description {
+    grid-area: descricao;
 }
 
 /* ---- */
